@@ -1,0 +1,22 @@
+# Список библиотек проекта. Установка всех сразу:
+#   .venv/bin/pip install -r requirements.txt
+
+# FastAPI — веб-фреймворк (эндпоинты + Swagger).
+# [standard] добавляет uvicorn (сервер) и команду `fastapi dev` для запуска.
+fastapi[standard]
+
+# SQLAlchemy — работа с базой данных через Python-классы (ORM).
+sqlalchemy>=2.0
+
+# bcrypt — хеширование паролей (делает «отпечаток» пароля).
+bcrypt
+
+# PyJWT — создание и проверка JWT-токенов (наши «пропуска»).
+pyjwt
+
+# pydantic[email] — проверка данных; [email] добавляет проверку формата email.
+pydantic[email]
+
+# python-multipart — нужен FastAPI, чтобы принимать формы
+# (форма логина в Swagger, позже — загрузка фото).
+python-multipart
